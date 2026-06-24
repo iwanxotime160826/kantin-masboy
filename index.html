@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kantin Mas Boy</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: #f8fef9;
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.header-text h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.header-text p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Bagian Menu */
+.menu-section {
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 30px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #a5d6a7;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Tata Letak Kartu Menu */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(46, 125, 50, 0.12);
+  border: 1px solid #e8f5e9;
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.2);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #f1f8e9;
+}
+
+.menu-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-info h3 {
+  color: #2e7d32;
+  margin-bottom: 12px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+/* Footer */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="images/logo-removebg-preview.png" alt="Logo Kantin Mas Boy" class="logo">
+    <div class="header-text">
+      <h1>KANTIN MAS BOY</h1>
+      <p>Hidangan Lezat, Harga Bersahabat</p>
+    </div>
+  </div>
+</header>
+
+<section class="menu-section">
+  <h2 class="section-title">Daftar Menu Kami</h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="images/bolognese.jpeg" alt="Spaghetti Chicken Bolognese">
+      <div class="menu-info">
+        <h3>Spaghetti Chicken Bolognese</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/burger beff scramble egg.jpeg" alt="Burger Beef Scramble Egg">
+      <div class="menu-info">
+        <h3>Burger Beef Scramble Egg</h3>
+        <p class="price">Rp 12.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/katsumayo.jpeg" alt="Chicken Katsu Mayo">
+      <div class="menu-info">
+        <h3>Chicken Katsu Mayo</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/nasi goreng spesial.jpeg" alt="Nasi Goreng Spesial">
+      <div class="menu-info">
+        <h3>Nasi Goreng Spesial</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/ayam-crispy .jpeg" alt="Ayam Crispy">
+      <div class="menu-info">
+        <h3>Ayam Crispy</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/Chicken popcorn saus BBQ.jpeg" alt="Chicken Popcorn Saus BBQ">
+      <div class="menu-info">
+        <h3>Chicken Popcorn Saus BBQ</h3>
+        <p class="price">Rp 12.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/katsu saus bbq n cheese.jpeg" alt="Katsu Saus BBQ & Cheese">
+      <div class="menu-info">
+        <h3>Katsu Saus BBQ & Cheese</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/ayam gooreng baput.jpeg" alt="Ayam Goreng Bawang Putih">
+      <div class="menu-info">
+        <h3>Ayam Goreng Bawang Putih</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/ayam bakar pedes madu.jpeg" alt="Ayam Bakar Pedas Madu">
+      <div class="menu-info">
+        <h3>Ayam Bakar Pedas Madu</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/949344796473702852.jpg" alt="Bakso">
+      <div class="menu-info">
+        <h3>Bakso</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+     <div class="menu-card">
+      <img src="images/Ayam Geprek.jpg" alt="Bakso">
+      <div class="menu-info">
+        <h3>SGeprek</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+     <div class="menu-card">
+      <img src="images/MIE GORENG.jpg" alt="Bakso">
+      <div class="menu-info">
+        <h3>Mie Goreng</h3>
+        <p class="price">Rp 15.000</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Kantin Mas Boy | Semua Hak Dilindungi
+</footer>
+
+</body>
+</html>
